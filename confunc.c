@@ -34,9 +34,10 @@ int con_func(va_list args, char inp)
 		case 'i':
 			b = va_arg(args, int);
 			return (print_i(b));
-		case 'u': c = va_arg(args, int);
-			  return (print_i(c));
-		default:
-			  return (0);
+	case 'u':
+	c = va_arg(args, int);
+	return (print_i(c));
+	default:
+	return (0);
 	}
 }
